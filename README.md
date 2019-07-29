@@ -1,4 +1,4 @@
-# NLP_class
+# NLP learning code
 NLP相关代码 学习
 
 ### Assignment 1 
