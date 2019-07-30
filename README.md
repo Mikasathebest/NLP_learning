@@ -9,7 +9,7 @@ NLP相关代码 学习
       b.得到地铁数据，构建地铁网路
       c.用不同的搜索方式对地铁网路进行搜索（DFS BFS）
 ### Assignment 3
-      a.由sklearn得到Boston放假
+      a.由sklearn得到Boston房价
       b.随机生成参数法，拟合房价
       c.给予一定方向后，拟合房价
       d.梯度下降法，拟合房价
