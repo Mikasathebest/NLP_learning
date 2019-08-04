@@ -30,3 +30,14 @@ NLP相关代码 学习
 * 解析edit distance的解法（solution）
  
 </details>
+
+<details>
+<summary>Assignment 4</summary>
+
+* 下载中文维基百科，构建语料库
+* 数据处理： 删减不必要的信息、繁体简体转换、切词
+* 通过word2vec将文本进行转换： 词语—>向量  
+* 绘制词云  
+* 使用kaggle的T-SEN进行词向量可视化 
+
+</details>
