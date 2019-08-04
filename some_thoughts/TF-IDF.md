@@ -1,7 +1,8 @@
 ## TF-IDF简介
 TF-IDF（Term Frequency/Inverse Document Frequency）是信息检索领域非常重要的搜索词重要性度量；用以衡量一个关键词w对于查询（Query，可看作文档）所能提供的信息。  
 词频（Term Frequency, TF）表示关键词w在文档Di中出现的频率：
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}" />
+
 
 $$ TF_{w,D_i}= \frac{count(w)}{|(D_i)|}$$
 
