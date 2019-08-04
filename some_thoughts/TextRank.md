@@ -4,16 +4,21 @@ TextRank由Mihalcea与Tarau于EMNLP'04 [1]提出来，其思想非常简单：
 迭代计算每个节点的rank值，排序rank值即可得到关键词。
 PageRank本来是用来解决网页排名的问题，网页之间的链接关系即为图的边，迭代计算公式如下：
 
-![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/PageRank.jpg)
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/PageRank.jpg)  
+
 其中，PR(Vi)表示结点Vi的rank值，In(Vi)表示结点Vi的前驱结点集合，Out(Vj)表示结点Vj的后继结点集合，d为damping factor用于做平滑。
 
 网页之间的链接关系可以用图表示，那么怎么把一个句子（可以看作词的序列）构建成图呢？
 TextRank将某一个词与其前面的N个词、以及后面的N个词均具有图相邻关系（类似于N-gram语法模型）。
 具体实现：设置一个长度为N的滑动窗口，所有在这个窗口之内的词都视作词结点的相邻结点；则TextRank构建的词图为无向图。
 下图给出了由一个文档构建的词图（去掉了停用词并按词性做了筛选）：
-### 图片
+
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/PRgraph.jpg)
+
 考虑到不同词对可能有不同的共现（co-occurrence），TextRank将共现作为无向图边的权值。那么，TextRank的迭代计算公式如下：
-###公式
+
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/textRank.jpg)
+
 可以看出，该公式仅仅比PageRank多了一个权重项Wji，用来表示两个节点之间的边连接有不同的重要程度。
 
 在这里算是简单说明了TextRank的内在原理，以下对其关键词提取应用做进一步说明。
@@ -22,8 +27,11 @@ TextRank用于关键词提取的算法如下：
 
 1)把给定的文本T按照完整句子进行分割，即
 
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Textrank_1.png)
+
 2)对于每个句子Si属于T，进行分词和词性标注处理，并过滤掉停用词，只保留指定词性的单词，如名词、动词、形容词，即
 
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/TextRank2.jpg)
 
 ，其中 ti,j 是保留后的候选关键词。
 
@@ -43,6 +51,7 @@ TextRank用于关键词提取的算法如下：
 
 　　将文本中的每个句子分别看做一个节点，如果两个句子有相似性，那么认为这两个句子对应的节点之间存在一条无向有权边。考察句子相似度的方法是下面这个公式：
   
+  ![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/TextRank3.jpg)
   
   公式中，Si,Sj分别表示两个句子词的个数总数，Wk表示句子中的词，那么分子部分的意思是同时出现在两个句子中的同一个词的个数，分母是对句子中词的个数求对数之和。分母这样设计可以遏制较长的句子在相似度计算上的优势。
 
