@@ -3,8 +3,8 @@ TextRank由Mihalcea与Tarau于EMNLP'04 [1]提出来，其思想非常简单：
 通过词之间的相邻关系构建网络，然后用PageRank(https://www.cnblogs.com/en-heng/p/6124526.html)
 迭代计算每个节点的rank值，排序rank值即可得到关键词。
 PageRank本来是用来解决网页排名的问题，网页之间的链接关系即为图的边，迭代计算公式如下：
-### 公式
 
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/PageRank.jpg)
 其中，PR(Vi)表示结点Vi的rank值，In(Vi)表示结点Vi的前驱结点集合，Out(Vj)表示结点Vj的后继结点集合，d为damping factor用于做平滑。
 
 网页之间的链接关系可以用图表示，那么怎么把一个句子（可以看作词的序列）构建成图呢？
