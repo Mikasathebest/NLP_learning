@@ -7,6 +7,7 @@ a.定义语法，建立句子生成器
 b.由豆瓣影评训练语言模型，评估上面生成的句子   
 </details>
 
+<details>
  <summary>Assignment 2 </summary>
 a.爬虫，爬取北京地铁数据  
 b.得到地铁数据，构建地铁网路  
