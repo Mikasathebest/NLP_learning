@@ -41,3 +41,16 @@ NLP相关代码 学习
 * 使用kaggle的T-SEN进行词向量可视化 
 
 </details>
+
+<details>
+<summary>Assignment 5</summary>
+
+* 读取新闻语料库，清理、切词
+* 进行Word2Vec转换
+* 对比：基于Word2Vec向量找近义词、基于图搜索找近义词 
+* TFIDF找文本关键字  
+* 绘制词云  
+* 对文件进行TFIDF向量化  
+* 词搜索引擎（朴素搜索）
+
+</details>
