@@ -54,3 +54,12 @@ NLP相关代码 学习
 * 词搜索引擎：朴素搜索、基于TFIDF排序搜索
 
 </details>
+
+<details>
+<summary>Assignment 6</summary>
+
+* 机器学习初步
+* Overfitting & Underfitting
+* ML应用
+
+</details>
