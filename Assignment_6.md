@@ -64,7 +64,7 @@ AlphaGo
 广告推荐  
 
 **Come out with three new sceneries with which machine learning may be applied**
-NLP：理解文章语义 
-CV：视频内容识别  
+NLP：理解文章语义   
+CV：视频内容识别    
 生物： 解析人体结构，例如大脑结构，细胞结构，蛋白质结构etc
 
