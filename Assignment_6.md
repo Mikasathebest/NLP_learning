@@ -17,12 +17,14 @@
 
 ### 二.解决办法
 
-使用K折验证（K-fold Cross-Validation）。e.g. K=5：把训练集切成5等份----尽量使数据均匀分布在五个子数据集中，
+* 使用K折验证（K-fold Cross-Validation）。  
+e.g. K=5：把训练集切成5等份----尽量使数据均匀分布在五个子数据集中，
 然后选择一个作为验证集，其余4个作为训练集。  
 这样重复5次，我们由一组数据，得到五个训练结果，将各个训练结果取平均值，即可。  
 
 ![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Five%20fold%20cross-validation.png)  
 
+* 实际操作  
 对于特定的一组数据集，我们可以采用1~40阶的函数----即40个函数去拟合它，然后分别求出交叉验证错误率，如下图所示，找出错误率最低的，即可。  
 
 ![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Cross%20Validation%20Result.png)  
