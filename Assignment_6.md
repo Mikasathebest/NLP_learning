@@ -29,3 +29,16 @@ e.g. K=5：把训练集切成5等份----尽量使数据均匀分布在五个子�
 
 ![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Cross%20Validation%20Result.png)  
 ![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/CrossValidation%20Result%20Graph.png)  
+
+可以看出，4阶方程的拟合误差最小。  
+实际上，4阶方程确实能够最有效地抓住数据分布的特点，如下所示：
+
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Balanced%204%20Degree%20polynomial%20model.png)  
+
+## 三.进一步验证
+
+为了进一步验证我们上述理论，我们将训练集和测试集的错误率曲线画出。
+![image](https://github.com/Mikasathebest/NLP_learning/blob/master/images/Training%20and%20Testing%20Curves.png)   
+
+可以看出，欠拟合的模型，它的误差在**训练集和测试集上都非常大**；过拟合的模型，**在训练集上误差很小、在测试集上误差很大**  
+因此我们需要挑选出合适的模型，避免欠拟合和过拟合的发生
