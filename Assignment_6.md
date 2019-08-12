@@ -42,3 +42,29 @@ e.g. K=5：把训练集切成5等份----尽量使数据均匀分布在五个子�
 
 可以看出，欠拟合的模型，它的误差在**训练集和测试集上都非常大**；过拟合的模型，**在训练集上误差很小、在测试集上误差很大**  
 因此我们需要挑选出合适的模型，避免欠拟合和过拟合的发生
+
+## 四.其他杂项
+
+其实还有其他很多具体的方法解决上述问题，例如：  
+* Overfitting  
+加入惩罚性：L1、L2正则化  
+全连接网络可以 Dropout  
+降低模型复杂度，以及增加数据量  
+加入噪声（输入加噪声、权值加噪声、网络响应加噪声）  
+ensemble----结合多种模型，bagging：用不同模型拟合不同训练集； Boosting：使用简单神经网络，加权平均其输出  
+
+* Underfitting  
+增加其他特征项  
+增加模型复杂度，例如加入二次项、三次项  
+减少正则参数  
+
+**Writing down three sceneries that machine learning has been used now**  
+AlphaGo  
+人脸识别  
+广告推荐  
+
+**Come out with three new sceneries with which machine learning may be applied**
+NLP：理解文章语义 
+CV：视频内容识别  
+生物： 解析人体结构，例如大脑结构，细胞结构，蛋白质结构etc
+
