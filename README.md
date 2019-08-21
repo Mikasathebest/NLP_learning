@@ -63,3 +63,15 @@ NLP相关代码 学习
 * ML应用
 
 </details>
+
+<details>
+<summary>Assignment 6</summary>
+
+* 目标：判别一篇新闻的来源是否为新华社
+* 重点：样本中有 87% 来源是新华社，因此低于87%的的判别可以认为是无效的
+* 方法：TFIDF向量化、Precision； Recall； F1 Score ；ROC AUC score
+* 对以下方法均计算了上述参数： Logistic Regression、KNN、SVM、Naive Bayes、Random Tree、 Random Forest
+* 最后在87052篇新闻中，找出了180篇疑似抄袭的新闻
+
+</details>
+
