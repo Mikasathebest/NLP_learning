@@ -65,7 +65,7 @@ NLP相关代码 学习
 </details>
 
 <details>
-<summary>Assignment 6</summary>
+<summary>Assignment 7</summary>
 
 * 目标：判别一篇新闻的来源是否为新华社
 * 重点：样本中有 87% 来源是新华社，因此低于87%的的判别可以认为是无效的
