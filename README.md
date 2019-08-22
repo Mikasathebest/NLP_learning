@@ -1,5 +1,5 @@
 # NLP learning code
-NLP相关代码 学习
+NLP相关代码
 
 <details>
 <summary>Assignment 1</summary>
